@@ -8,10 +8,10 @@
     "slideshow"
   ],
   "peerDependencies": {
-    "react": "^15.5.4"
+    "react": "^17.0.2"
   },
   "dependencies": {
-    "react": "^15.5.4",
+    "react": "^17.0.2",
     "webpack": "^2.6.1"
   },
   "scripts": {
