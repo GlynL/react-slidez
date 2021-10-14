@@ -106,79 +106,78 @@ module.exports = require("react");
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Slideshow_css__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Slideshow_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Slideshow_css__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__(0);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Arrows = function Arrows(props) {
-  return _react2.default.createElement(
-    'div',
-    { className: 'arrows' },
-    _react2.default.createElement('span', {
-      onClick: props.decreaseCount,
-      className: 'arrow btn-arrow btn-arrow-left'
-    }),
-    _react2.default.createElement('span', {
-      onClick: props.increaseCount,
-      className: 'arrow btn-arrow btn-arrow-right'
-    })
-  );
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "arrows"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+    onClick: props.decreaseCount,
+    className: "arrow btn-arrow btn-arrow-left"
+  }), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+    onClick: props.increaseCount,
+    className: "arrow btn-arrow btn-arrow-right"
+  }));
 };
 
-exports.default = Arrows;
+/* harmony default export */ __webpack_exports__["a"] = (Arrows);
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Arrows = __webpack_require__(2);
-
-var _Arrows2 = _interopRequireDefault(_Arrows);
-
-__webpack_require__(0);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Arrows_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Slideshow_css__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Slideshow_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Slideshow_css__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Slideshow = function (_Component) {
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var Slideshow = /*#__PURE__*/function (_Component) {
   _inherits(Slideshow, _Component);
 
+  var _super = _createSuper(Slideshow);
+
   function Slideshow(props) {
+    var _this;
+
     _classCallCheck(this, Slideshow);
 
-    var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this, props));
-
+    _this = _super.call(this, props);
     _this.state = {
       currentSlide: props.defaultIndex,
       slideInterval: props.slideInterval,
@@ -190,30 +189,28 @@ var Slideshow = function (_Component) {
       enableKeyboard: props.enableKeyboard,
       slides: props.slides.length > 0 ? props.slides : props.children
     };
-
-    _this.runSlideShow = _this.runSlideShow.bind(_this);
-    _this.autoSlideshow = _this.autoSlideshow.bind(_this);
-    _this.restartSlideshow = _this.restartSlideshow.bind(_this);
-    _this.increaseCount = _this.increaseCount.bind(_this);
-    _this.decreaseCount = _this.decreaseCount.bind(_this);
-    _this.handleKeyboard = _this.handleKeyboard.bind(_this);
+    _this.runSlideShow = _this.runSlideShow.bind(_assertThisInitialized(_this));
+    _this.autoSlideshow = _this.autoSlideshow.bind(_assertThisInitialized(_this));
+    _this.restartSlideshow = _this.restartSlideshow.bind(_assertThisInitialized(_this));
+    _this.increaseCount = _this.increaseCount.bind(_assertThisInitialized(_this));
+    _this.decreaseCount = _this.decreaseCount.bind(_assertThisInitialized(_this));
+    _this.handleKeyboard = _this.handleKeyboard.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Slideshow, [{
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {
       if (this.state.autoplay) this.runSlideShow();
-
       if (this.state.enableKeyboard) document.addEventListener('keydown', this.handleKeyboard);
     }
   }, {
-    key: 'handleKeyboard',
+    key: "handleKeyboard",
     value: function handleKeyboard(e) {
       e.keyCode === 37 ? this.decreaseCount() : e.keyCode === 39 ? this.increaseCount() : null;
     }
   }, {
-    key: 'runSlideShow',
+    key: "runSlideShow",
     value: function runSlideShow() {
       var intervalId = setInterval(this.autoSlideshow, this.state.slideInterval);
       this.setState({
@@ -221,145 +218,120 @@ var Slideshow = function (_Component) {
       });
     }
   }, {
-    key: 'componentWillUnmount',
+    key: "componentWillUnmount",
     value: function componentWillUnmount() {
       clearInterval(this.state.intervalId);
       document.removeEventListener('keydown', this.handleKeyboard);
     }
   }, {
-    key: 'autoSlideshow',
+    key: "autoSlideshow",
     value: function autoSlideshow() {
       this.setState({
         currentSlide: (this.state.currentSlide + 1) % this.state.slides.length
       });
     }
   }, {
-    key: 'restartSlideshow',
+    key: "restartSlideshow",
     value: function restartSlideshow() {
       clearInterval(this.state.intervalId);
       this.runSlideShow();
     }
   }, {
-    key: 'increaseCount',
+    key: "increaseCount",
     value: function increaseCount() {
       this.state.effect === 'left' ? this.setState({
         effect: 'right'
       }) : this.state.effect === 'bounce-left' ? this.setState({
         effect: 'bounce-right'
       }) : null;
-
       this.state.autoplay ? this.restartSlideshow() : null;
       this.setState({
         currentSlide: (this.state.currentSlide + 1) % this.state.slides.length
       });
     }
   }, {
-    key: 'decreaseCount',
+    key: "decreaseCount",
     value: function decreaseCount() {
       this.state.effect === 'right' ? this.setState({
         effect: 'left'
       }) : this.state.effect === 'bounce-right' ? this.setState({
         effect: 'bounce-left'
       }) : null;
-
       this.state.autoplay ? this.restartSlideshow() : null;
-
-      var currentSlide = void 0;
+      var currentSlide;
       currentSlide = this.state.currentSlide === 0 ? this.state.slides.length - 1 : currentSlide = this.state.currentSlide - 1;
       this.setState({
         currentSlide: currentSlide
       });
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
       var _this2 = this;
 
-      var _state = this.state,
-          slides = _state.slides,
-          showIndex = _state.showIndex,
-          useDotIndex = _state.useDotIndex,
-          effect = _state.effect,
-          showArrows = _state.showArrows;
-
-
+      var _this$state = this.state,
+          slides = _this$state.slides,
+          showIndex = _this$state.showIndex,
+          useDotIndex = _this$state.useDotIndex,
+          effect = _this$state.effect,
+          showArrows = _this$state.showArrows;
       var slideEffect = effect === undefined ? 'fade' : effect;
-      var slideShowSlides = void 0;
-      var slideShowIndex = void 0;
+      var slideShowSlides;
+      var slideShowIndex;
 
       if (!this.props.children) {
         slideShowSlides = slides.map(function (slide, i) {
-          return _react2.default.createElement('li', {
-            className: 'slide ' + effect + ' ' + (_this2.state.currentSlide === i ? 'showing-' + slideEffect : ''),
+          return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+            className: "slide ".concat(effect, " ").concat(_this2.state.currentSlide === i ? 'showing-' + slideEffect : ''),
             key: i,
-            style: { backgroundImage: 'url(' + slide + ')' }
+            style: {
+              backgroundImage: "url(".concat(slide, ")")
+            }
           });
         });
       } else {
         slideShowSlides = slides.map(function (slide, i) {
-          return _react2.default.createElement(
-            'li',
-            {
-              className: 'slide ' + effect + ' ' + (_this2.state.currentSlide === i ? 'showing-' + slideEffect : ''),
-              key: i
-            },
-            slide
-          );
+          return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+            className: "slide ".concat(effect, " ").concat(_this2.state.currentSlide === i ? 'showing-' + slideEffect : ''),
+            key: i
+          }, slide);
         });
       }
 
       if (useDotIndex) {
-        slideShowIndex = _react2.default.createElement(
-          'div',
-          { className: 'show-index is-dot' },
-          slides.map(function (slide, i) {
-            return _react2.default.createElement('span', {
-              className: 'dot ' + (_this2.state.currentSlide === i ? 'is-active' : ''),
-              key: 'dot' + i
-            });
-          })
-        );
+        slideShowIndex = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "show-index is-dot"
+        }, slides.map(function (slide, i) {
+          return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+            className: "dot ".concat(_this2.state.currentSlide === i ? 'is-active' : ''),
+            key: "dot".concat(i)
+          });
+        }));
       } else {
-        slideShowIndex = _react2.default.createElement(
-          'div',
-          { className: 'show-index is-text' },
-          _react2.default.createElement(
-            'p',
-            null,
-            this.state.currentSlide + 1 + ' / ' + slides.length
-          )
-        );
+        slideShowIndex = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "show-index is-text"
+        }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "".concat(this.state.currentSlide + 1, " / ").concat(slides.length)));
       }
 
-      return _react2.default.createElement(
-        'div',
-        {
-          style: {
-            position: 'absolute',
-            height: this.props.height || '100%',
-            width: this.props.width || '100%'
-          }
-        },
-        _react2.default.createElement(
-          'div',
-          { className: 'slideshow-container' },
-          _react2.default.createElement(
-            'ul',
-            { className: 'slides' },
-            slideShowSlides
-          ),
-          showArrows && _react2.default.createElement(_Arrows2.default, {
-            decreaseCount: this.decreaseCount,
-            increaseCount: this.increaseCount
-          }),
-          showIndex && slideShowIndex
-        )
-      );
+      return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        style: {
+          position: 'absolute',
+          height: this.props.height || '100%',
+          width: this.props.width || '100%'
+        }
+      }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: "slideshow-container"
+      }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+        className: "slides"
+      }, slideShowSlides), showArrows && /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Arrows_js__["a" /* default */], {
+        decreaseCount: this.decreaseCount,
+        increaseCount: this.increaseCount
+      }), showIndex && slideShowIndex));
     }
   }]);
 
   return Slideshow;
-}(_react.Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 Slideshow.defaultProps = {
   showIndex: false,
@@ -374,8 +346,7 @@ Slideshow.defaultProps = {
   height: '100%',
   width: '100%'
 };
-
-exports.default = Slideshow;
+/* harmony default export */ __webpack_exports__["default"] = (Slideshow);
 
 /***/ }),
 /* 4 */
