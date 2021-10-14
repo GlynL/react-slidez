@@ -1,4 +1,6 @@
 {
-  "presets": ["env"],
+  "presets": ["env", { "targets": { "chrome": "30" } }],
   "plugins": ["transform-object-rest-spread", "transform-react-jsx"]
 }
+
+
